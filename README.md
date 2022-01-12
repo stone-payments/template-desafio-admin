@@ -233,6 +233,11 @@ Fique à vontade para definir seu próprio layout. Mas vamos deixar algumas dica
 - [REST](https://pt.wikipedia.org/wiki/REST)
 - [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
 
-
+## Entrega do desafio para avaliação
+1. O repositório contendo o seu projeto deve estar "privado".
+2. O time de recrutamento fornecerá os usuários (revisores) que precisam de acesso ao seu projeto. Para adicionar estes usuários, será necessário ir no Github em "Settings" -> "Manage access" -> "Add people".
+3. O time de desenvolvimento da Stone precisará do link para o seu repositório. Dessa forma conseguiremos revisar, testar e acompanhar o progresso do mesmo até a entrega final.
+4. Manter contato com o time de recrutamento para levantar dúvidas e nos atualizar sobre progresso.
+5. Aguardar.
 
 Tenha um bom desafio.
