@@ -35,7 +35,8 @@
     "dev:server": "yarn run build:server && node ./build/index.js",
     "build:client": "yarn && react-scripts build",
     "start": "pm2-runtime start pm2.json --env production",
-    "serve:kill": "pm2 kill"
+    "serve:kill": "pm2 kill",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
