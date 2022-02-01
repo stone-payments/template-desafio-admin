@@ -30,9 +30,9 @@
   "scripts": {
     "dev": "concurrently --kill-others \"yarn run dev:server\" \"yarn run dev:client\"",
     "build": "yarn run build:server && yarn run build:client",
-    "build:server": "cd ./server && yarn && yarn build",
+    "build:server": "tsc --project tsconfig.server.json && node ./build/generator.js",
     "dev:client": "react-scripts start",
-    "dev:server": "yarn run build:server && cd ./server && yarn start",
+    "dev:server": "yarn run build:server && node ./build/index.js",
     "build:client": "yarn && react-scripts build",
     "start": "pm2-runtime start pm2.json --env production",
     "serve:kill": "pm2 kill"
