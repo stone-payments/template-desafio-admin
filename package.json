@@ -58,7 +58,6 @@
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
-    "@types/json-server": "^0.14.4",
-    "ts-node": "^10.9.1"
+    "@types/json-server": "^0.14.4"
   }
 }
