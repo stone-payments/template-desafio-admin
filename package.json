@@ -6,8 +6,7 @@
     "node": ">=16.13.2"
   },
   "cacheDirectories": [
-    "node_modules",
-    "server/node_modules"
+    "node_modules"
   ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
