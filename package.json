@@ -13,6 +13,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "@types/cors": "^2.8.12",
     "@types/json-server": "^0.14.4",
     "@types/node": "^18.6.2",
     "@types/react": "^17.0.38",
