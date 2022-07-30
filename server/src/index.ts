@@ -2,6 +2,7 @@ import * as jsonServer from "json-server";
 import * as path from "path";
 import cors from "cors";
 import express from "express";
+import dotenv from "dotenv";
 import { db } from "./generator";
 
 /**
@@ -10,11 +11,13 @@ import { db } from "./generator";
  * React App: http://localhost:3000
  *
  * Cloud, on production environment
- * API: http://localhost:3000/api/users
- * React App: http://localhost:3000
+ * API: http://localhost:3000/api/users | https://dashboard.heroku.com/apps/nome-do-meu-app/api/users
+ * React App: http://localhost:3000 | https://dashboard.heroku.com/apps/nome-do-meu-app
  */
 
-let port = "3000";
+dotenv.config({ path: path.resolve(__dirname, "../../.env") });
+
+let port = process.env.PORT;
 const server = express();
 const isDev = process.env.NODE_ENV !== "production";
 
