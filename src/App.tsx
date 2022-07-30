@@ -2,6 +2,16 @@ import React, { useEffect, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
+/**
+ * Local, on development environment
+ * API: http://localhost:3001/api/users
+ * React App: http://localhost:3000
+ *
+ * Cloud, on production environment
+ * API: http://localhost:3000/api/users | https://dashboard.heroku.com/apps/nome-do-meu-app/api/users
+ * React App: http://localhost:3000 | https://dashboard.heroku.com/apps/nome-do-meu-app
+ */
+
 function App() {
   const [users, setUsers] = useState([]);
   const url =
