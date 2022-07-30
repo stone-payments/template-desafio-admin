@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./server/build",
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Node"
+  },
+  "include": ["./server/src"]
+}

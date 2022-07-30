@@ -3,35 +3,40 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": ">=12.x"
+    "node": ">=16.13.2"
   },
   "cacheDirectories": [
     "node_modules",
     "server/node_modules"
   ],
   "dependencies": {
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "concurrently": "^6.0.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/node": "^18.6.2",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "concurrently": "^7.3.0",
     "env-cmd": "^10.1.0",
-    "express": "^4.17.1",
-    "pm2": "^4.5.5",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
+    "express": "^4.18.1",
+    "json-server": "^0.17.0",
+    "pm2": "^5.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.4.2",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "dev": "concurrently --kill-others \"yarn run dev:server\" \"yarn run dev:client\"",
     "build": "yarn run build:server && yarn run build:client",
-    "build:server": "cd ./server && yarn && yarn build",
+    "build:server": "tsc --project tsconfig.server.json",
     "dev:client": "react-scripts start",
-    "dev:server": "yarn run build:server && cd ./server && yarn start",
+    "dev:server": "yarn run build:server && node ./server/build/index.js",
     "build:client": "yarn && react-scripts build",
     "start": "pm2-runtime start pm2.json --env production",
-    "serve:kill": "pm2 kill"
+    "start:kill": "pm2 kill",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +57,7 @@
     ]
   },
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    "@types/cors": "^2.8.12",
+    "@types/json-server": "^0.14.4"
   }
 }

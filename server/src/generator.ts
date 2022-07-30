@@ -10,8 +10,6 @@
  * 3- console.log(getUsers());
  */
 
-const fs = require("fs");
-
 const references = {
   users: [
     "Lucas da Silva",
@@ -112,10 +110,9 @@ const getUsers = () => {
     },
     address: {
       streetNumber: generateRandomNumber(0, 1000),
-      city:
-        references.cities[
-          generateRandomNumber(0, references.cities.length - 1)
-        ],
+      city: references.cities[
+        generateRandomNumber(0, references.cities.length - 1)
+      ],
       state:
         references.state[generateRandomNumber(0, references.state.length - 1)],
       neighborhood:
@@ -198,15 +195,3 @@ export const db = {
   features: getFeatures(),
   audits: getAudits(),
 };
-
-fs.writeFile(`${__dirname}/db.json`, JSON.stringify(db), (err: any) => {
-  if (err) {
-    return console.log(err);
-  }
-});
-
-// Executar
-// console.log(getUsers());
-// console.log(getAnalysts());
-// console.log(getCards());
-// console.log(getFeatures());
