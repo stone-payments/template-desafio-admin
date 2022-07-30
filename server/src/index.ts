@@ -41,6 +41,6 @@ if (!isDev) {
 server.listen(port, () => {
   console.log(
     `API running on port ${port}, access it with http://localhost:${port}/api/users \n
-    React App running on port ${port}, access it with http://localhost:${port}/`
+    React App running on port 3000, access it with http://localhost:3000/`
   );
 });
