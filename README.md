@@ -195,6 +195,7 @@ Fique à vontade para definir seu próprio layout. Mas vamos deixar algumas dica
 - O resultado final atende ao que se propõe fazer?
 - O resultado final atende totalmente aos requisitos propostos?
 - O resultado final é visualmente elegante?
+- O resultado final está acompanhado de testes automatizados?
 
 ### **Boas Práticas**
 
@@ -222,8 +223,8 @@ Fique à vontade para definir seu próprio layout. Mas vamos deixar algumas dica
 ### **Outras informações**
 
 - Utilize React + TypeScript.
-- Ferramentas como BootStrap, Material Ui, MaterializeCSS e React-Admin podem ser utilizadas.
-- A implementação de testes será vista como um bônus.
+- Ferramentas como BootStrap, MUI, MaterializeCSS podem ser utilizadas.
+- A implementação de testes é obrigatória e tem o seu peso de acordo com o nível.
 
 ### **Material de Estudo**
 
